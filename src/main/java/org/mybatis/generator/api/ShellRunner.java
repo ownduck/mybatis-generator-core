@@ -51,12 +51,13 @@ public class ShellRunner {
     private static final String HELP_2 = "-h"; //$NON-NLS-1$
 
     public static void main(String[] args) {
-        if (args.length == 0) {
-            usage();
-            System.exit(0);
-            return; // only to satisfy compiler, never returns
-        }
+//        if (args.length == 0) {
+//            usage();
+//            System.exit(0);
+//            return; // only to satisfy compiler, never returns
+//        }
 
+        args = "-configfile ./r_reportor.xml -overwrite".split("\\s+");
         Map<String, String> arguments = parseCommandLine(args);
 
         if (arguments.containsKey(HELP_1)) {
