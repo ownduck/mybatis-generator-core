@@ -48,19 +48,19 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <table tableName="favorites" domainObjectName="FavoriteModel"
+        <table tableName="favorites" domainObjectName="Favorite"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
-        <table tableName="searchlog" domainObjectName="SearchlogModel"
+        <table tableName="searchlog" domainObjectName="Searchlog"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
-        <table tableName="user_subscribe" domainObjectName="UserSubscribeModel"
+        <table tableName="user_subscribe" domainObjectName="UserSubscribe"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
-        <table tableName="user_subscribe_info" domainObjectName="UserSubscribeInfoModel"
+        <table tableName="user_subscribe_info" domainObjectName="UserSubscribeInfo"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>

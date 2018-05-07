@@ -1064,6 +1064,12 @@ public abstract class IntrospectedTable {
     }
 
     public void setBaseRecordType(String baseRecordType) {
+        //#model
+        if (true){
+            internalAttributes.put(InternalAttribute.ATTR_BASE_RECORD_TYPE,
+                    baseRecordType+"Model");
+            return;
+        }
         internalAttributes.put(InternalAttribute.ATTR_BASE_RECORD_TYPE,
                 baseRecordType);
     }
@@ -1133,6 +1139,14 @@ public abstract class IntrospectedTable {
     }
 
     public void setMyBatis3XmlMapperFileName(String mybatis3XmlMapperFileName) {
+        //#mapper
+        if (true){
+            internalAttributes.put(
+                    InternalAttribute.ATTR_MYBATIS3_XML_MAPPER_FILE_NAME,
+                    fullyQualifiedTable.getDomainObjectName()+"Mapper.xml");
+            return;
+        }
+
         internalAttributes.put(
                 InternalAttribute.ATTR_MYBATIS3_XML_MAPPER_FILE_NAME,
                 mybatis3XmlMapperFileName);
@@ -1144,6 +1158,14 @@ public abstract class IntrospectedTable {
     }
 
     public void setMyBatis3JavaMapperType(String mybatis3JavaMapperType) {
+        //#dao
+        if (true){
+            internalAttributes.put(
+                    InternalAttribute.ATTR_MYBATIS3_JAVA_MAPPER_TYPE,
+                    calculateJavaClientInterfacePackage()+".I"+tableConfiguration.getDomainObjectName()+"Dao");
+            return;
+        }
+
         internalAttributes.put(
                 InternalAttribute.ATTR_MYBATIS3_JAVA_MAPPER_TYPE,
                 mybatis3JavaMapperType);
