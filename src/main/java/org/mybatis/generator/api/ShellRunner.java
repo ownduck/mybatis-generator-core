@@ -28,6 +28,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.StringTokenizer;
 
+import org.apache.commons.io.FileUtils;
 import org.mybatis.generator.config.Configuration;
 import org.mybatis.generator.config.xml.ConfigurationParser;
 import org.mybatis.generator.exception.InvalidConfigurationException;
@@ -50,14 +51,18 @@ public class ShellRunner {
     private static final String HELP_1 = "-?"; //$NON-NLS-1$
     private static final String HELP_2 = "-h"; //$NON-NLS-1$
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        if (args.length == 0) {
 //            usage();
 //            System.exit(0);
 //            return; // only to satisfy compiler, never returns
 //        }
 
+        FileUtils.deleteDirectory(new File("/data/java/mybatis-generator-core-source/src/la"));
+
         args = "-configfile ./r_reportor.xml -overwrite".split("\\s+");
+//        args = "-configfile ./core_doc.xml -overwrite".split("\\s+");
+//        args = "-configfile ./market.xml -overwrite".split("\\s+");
         Map<String, String> arguments = parseCommandLine(args);
 
         if (arguments.containsKey(HELP_1)) {

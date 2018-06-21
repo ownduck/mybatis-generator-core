@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+       Copyright 2006-2018 the original author or authors.
+
+       Licensed under the Apache License, Version 2.0 (the "License");
+       you may not use this file except in compliance with the License.
+       You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+       Unless required by applicable law or agreed to in writing, software
+       distributed under the License is distributed on an "AS IS" BASIS,
+       WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+       See the License for the specific language governing permissions and
+       limitations under the License.
+
+-->
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
@@ -24,9 +41,9 @@
         </commentGenerator>
         <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.11.255.60:3306/core_doc?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
-                        userId="core_doc"
-                        password="Uvowse230w23sr2">
+                        connectionURL="jdbc:mysql://114.55.36.183:3306/bootdo?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
+                        userId="root"
+                        password="123456">
         </jdbcConnection>
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
@@ -42,11 +59,11 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="la.niub.abcapi.servicecompre.mapper.notice" targetProject="src">
+        <sqlMapGenerator targetPackage="la.niub.abcapi.servicecompre.mapper.market" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicecompre.dao.notice" targetProject="src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicecompre.dao.market" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
@@ -71,7 +88,42 @@
             <!--<property name="useActualColumnNames" value="true"/>-->
             <!--<property name="constructorBased" value="true"/>-->
         <!--</table>-->
-        <table tableName="analyst_honor" domainObjectName="AnalystHonor"
+        <table tableName="sec_price_1min" domainObjectName="SecPrice1Min"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_price_5min" domainObjectName="SecPrice5Min"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_price_15min" domainObjectName="SecPrice15Min"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_price_30min" domainObjectName="SecPrice30Min"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_price_60min" domainObjectName="SecPrice60Min"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_price_time" domainObjectName="SecPriceTime"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
