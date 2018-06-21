@@ -67,175 +67,126 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <!--<table tableName="favorites" domainObjectName="Favorite"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="searchlog" domainObjectName="Searchlog"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="user_subscribe" domainObjectName="UserSubscribe"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="user_subscribe_info" domainObjectName="UserSubscribeInfo"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="comprehensive_searches_hot_tips" domainObjectName="ComprehensiveSearchesHotTips"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="comprehensive_searches_top" domainObjectName="ComprehensiveSearchesTop"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="comprehensive_searches_report_recommend" domainObjectName="ComprehensiveSearchesReportRecommend"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="freq_SearchTables" domainObjectName="FreqSearchTables"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="all_TableGroups" domainObjectName="AllTableGroups"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="all_SearchTables" domainObjectName="AllSearchTables"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="com_profit" domainObjectName="ComProfit"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="normal_valuation_index" domainObjectName="NormalValuationIndex"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="company_1_min_price" domainObjectName="Company1MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="company_5_min_price" domainObjectName="Company5MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="company_30_min_price" domainObjectName="Company30MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="sec_price_day" domainObjectName="SecPriceDay"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="sec_price_week" domainObjectName="SecPriceWeek"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="sec_price_month" domainObjectName="SecPriceMonth"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_1_min_price" domainObjectName="StockMarket1MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_5_min_price" domainObjectName="StockMarket5MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_30_min_price" domainObjectName="StockMarket30MinPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_share_price" domainObjectName="StockMarketSharePrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_week_price" domainObjectName="StockMarketWeekPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="stock_market_month_price" domainObjectName="StockMarketMonthPrice"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <table tableName="element" domainObjectName="Element"
+        <table tableName="fund_basic_info" domainObjectName="FundBasicInfo"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_benchmark" domainObjectName="FundBenchmark"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_sub_redem_status" domainObjectName="FundSubRedemStatus"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_nav" domainObjectName="FundNav"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_nav_cur" domainObjectName="FundNavCur"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_invest_industry" domainObjectName="FundInvestIndustry"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_hold_stk_stat" domainObjectName="FundHoldStkStat"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="org_basic_info" domainObjectName="OrgBasicInfo"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_keeper_hold_stk" domainObjectName="FundKeeperHoldStk"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_invest_detail" domainObjectName="FundInvestDetail"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_hold_stk_chg" domainObjectName="FundHoldStkChg"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="sec_plate_info" domainObjectName="SecPlateInfo"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_invest_indu_stat" domainObjectName="FundInvestInduStat"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_keeper_fund" domainObjectName="FundKeeperFund"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_manager_basic_info" domainObjectName="FundManagerBasicInfo"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="peo_image" domainObjectName="PeoImage"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_manager_stat" domainObjectName="FundManagerStat"
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
+            <property name="useActualColumnNames" value="true"/>
+            <property name="constructorBased" value="true"/>
+        </table>
+        <table tableName="fund_nav_return" domainObjectName="FundNavReturn"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
