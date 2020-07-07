@@ -40,17 +40,24 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接地址账号密码-->
+        <!--线下开发环境-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.11.255.60:3306/core_doc?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
-                        userId="core_doc"
-                        password="Uvowse230w23sr2">
+                        connectionURL="jdbc:mysql://10.11.255.110:31306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
+                        userId="ps_reportor"
+                        password="e51b537570ba">
         </jdbcConnection>
+        <!--线上正式环境-->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--connectionURL="jdbc:mysql://121.41.26.224:3306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"-->
+                        <!--userId="test"-->
+                        <!--password="845cf0385974">-->
+        <!--</jdbcConnection>-->
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="la.niub.abcapi.servicecompre.model" targetProject="src">
+        <javaModelGenerator targetPackage="la.niub.abcapi.servicemovie.model" targetProject="src">
             <!-- 自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter -->
             <property name="constructorBased" value="false"/>
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
@@ -59,41 +66,22 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="la.niub.abcapi.servicecompre.mapper.notice" targetProject="src">
+        <sqlMapGenerator targetPackage="la.niub.abcapi.servicemovie.mapper.reportor" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicecompre.dao.notice" targetProject="src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicemovie.dao.reportor" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <!--<table tableName="hibor" domainObjectName="Hibor"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="market_report" domainObjectName="MarketReport"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="organ" domainObjectName="Organ"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <table tableName="analyst_honor" domainObjectName="AnalystHonor"
+        <table tableName="movie_relation" domainObjectName="MovieRelation"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
             <property name="constructorBased" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <!--<columnRenamingRule searchString="native" replaceString="native_place"/>-->
         </table>
     </context>
 </generatorConfiguration>
