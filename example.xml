@@ -42,15 +42,15 @@
         <!--数据库链接地址账号密码-->
         <!--线下开发环境-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.11.255.110:31306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
-                        userId="ps_reportor"
-                        password="e51b537570ba">
+                        connectionURL="jdbc:mysql://ip:port/db_name?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
+                        userId="username"
+                        password="passwd">
         </jdbcConnection>
         <!--线上正式环境-->
         <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
-                        <!--connectionURL="jdbc:mysql://121.41.26.224:3306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"-->
-                        <!--userId="test"-->
-                        <!--password="845cf0385974">-->
+                        <!--connectionURL="jdbc:mysql://ip:port/db_name?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"-->
+                        <!--userId="username"-->
+                        <!--password="passwd">-->
         <!--</jdbcConnection>-->
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
