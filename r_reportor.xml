@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-       Copyright 2006-2018 the original author or authors.
+       Copyright 2006-2022 the original author or authors.
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -40,17 +40,24 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接地址账号密码-->
+        <!--线下开发环境-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://10.11.255.110:31306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
                         userId="ps_reportor"
                         password="e51b537570ba">
         </jdbcConnection>
+        <!--线上正式环境-->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--connectionURL="jdbc:mysql://121.41.26.224:3306/r_reportor?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"-->
+                        <!--userId="test"-->
+                        <!--password="845cf0385974">-->
+        <!--</jdbcConnection>-->
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="la.niub.abcapi.servicecompre.model" targetProject="src">
+        <javaModelGenerator targetPackage="la.niub.abcapi.servicemovie.model" targetProject="src">
             <!-- 自动为每一个生成的类创建一个构造方法，构造方法包含了所有的field；而不是使用setter -->
             <property name="constructorBased" value="false"/>
             <!-- 在targetPackage的基础上，根据数据库的schema再生成一层package，最终生成的类放在这个package下，默认为false -->
@@ -59,139 +66,22 @@
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="la.niub.abcapi.servicecompre.mapper.reporter" targetProject="src">
+        <sqlMapGenerator targetPackage="la.niub.abcapi.servicemovie.mapper.reportor" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicecompre.dao.reporter" targetProject="src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="la.niub.abcapi.servicemovie.dao.reportor" targetProject="src">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <table tableName="fund_basic_info" domainObjectName="FundBasicInfo"
+        <table tableName="movie_relation" domainObjectName="MovieRelation"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
             <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_benchmark" domainObjectName="FundBenchmark"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_sub_redem_status" domainObjectName="FundSubRedemStatus"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_nav" domainObjectName="FundNav"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_nav_cur" domainObjectName="FundNavCur"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_invest_industry" domainObjectName="FundInvestIndustry"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_hold_stk_stat" domainObjectName="FundHoldStkStat"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="org_basic_info" domainObjectName="OrgBasicInfo"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_keeper_hold_stk" domainObjectName="FundKeeperHoldStk"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_invest_detail" domainObjectName="FundInvestDetail"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_hold_stk_chg" domainObjectName="FundHoldStkChg"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="sec_plate_info" domainObjectName="SecPlateInfo"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_invest_indu_stat" domainObjectName="FundInvestInduStat"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_keeper_fund" domainObjectName="FundKeeperFund"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_manager_basic_info" domainObjectName="FundManagerBasicInfo"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="peo_image" domainObjectName="PeoImage"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_manager_stat" domainObjectName="FundManagerStat"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="fund_nav_return" domainObjectName="FundNavReturn"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+            <!--<columnRenamingRule searchString="native" replaceString="native_place"/>-->
         </table>
     </context>
 </generatorConfiguration>

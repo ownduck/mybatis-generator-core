@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-       Copyright 2006-2018 the original author or authors.
+       Copyright 2006-2022 the original author or authors.
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -40,10 +40,17 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接地址账号密码-->
+        <!--线下测试-->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--connectionURL="jdbc:mysql://10.11.255.60:3306/core_doc?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"-->
+                        <!--userId="core_doc"-->
+                        <!--password="Uvowse230w23sr2">-->
+        <!--</jdbcConnection>-->
+        <!--线上正式-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://10.11.255.60:3306/core_doc?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
-                        userId="core_doc"
-                        password="Uvowse230w23sr2">
+                        connectionURL="jdbc:mysql://121.41.26.224:3306/core_doc?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
+                        userId="xwu_nj"
+                        password="OlzhredLja7s">
         </jdbcConnection>
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
@@ -67,28 +74,7 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <!--<table tableName="hibor" domainObjectName="Hibor"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="market_report" domainObjectName="MarketReport"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="organ" domainObjectName="Organ"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <table tableName="analyst_honor" domainObjectName="AnalystHonor"
+        <table tableName="analyst_statistics" domainObjectName="AnalystStatistics"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">

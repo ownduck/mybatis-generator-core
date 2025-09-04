@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-       Copyright 2006-2018 the original author or authors.
+       Copyright 2006-2022 the original author or authors.
 
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -41,9 +41,9 @@
         </commentGenerator>
         <!--数据库链接地址账号密码-->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://114.55.36.183:3306/bootdo?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
-                        userId="root"
-                        password="123456">
+                        connectionURL="jdbc:mysql://118.31.119.65:3306/market_price?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=PRC"
+                        userId="xwu_nj"
+                        password="OlzhredLja7s">
         </jdbcConnection>
         <javaTypeResolver>
             <!--是否强制DECIMAL和NUMERIC类型的字段转换为Java类型的java.math.BigDecimal-->
@@ -67,68 +67,29 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!--生成对应表及类名-->
-        <!--<table tableName="hibor" domainObjectName="Hibor"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="market_report" domainObjectName="MarketReport"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <!--<table tableName="organ" domainObjectName="Organ"-->
-               <!--enableCountByExample="false" enableUpdateByExample="false"-->
-               <!--enableDeleteByExample="false" enableSelectByExample="false"-->
-               <!--selectByExampleQueryId="false">-->
-            <!--<property name="useActualColumnNames" value="true"/>-->
-            <!--<property name="constructorBased" value="true"/>-->
-        <!--</table>-->
-        <table tableName="sec_price_1min" domainObjectName="SecPrice1Min"
+        <table tableName="index_price_week" domainObjectName="IndexPriceWeek"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
             <property name="constructorBased" value="true"/>
+            <!--<columnRenamingRule searchString="native" replaceString="native_place"/>-->
         </table>
-        <table tableName="sec_price_5min" domainObjectName="SecPrice5Min"
+        <table tableName="index_price_month" domainObjectName="IndexPriceMonth"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
             <property name="constructorBased" value="true"/>
+            <!--<columnRenamingRule searchString="native" replaceString="native_place"/>-->
         </table>
-        <table tableName="sec_price_15min" domainObjectName="SecPrice15Min"
+        <table tableName="index_price_year" domainObjectName="IndexPriceYear"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
             <property name="useActualColumnNames" value="true"/>
             <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="sec_price_30min" domainObjectName="SecPrice30Min"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="sec_price_60min" domainObjectName="SecPrice60Min"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
-        </table>
-        <table tableName="sec_price_time" domainObjectName="SecPriceTime"
-               enableCountByExample="false" enableUpdateByExample="false"
-               enableDeleteByExample="false" enableSelectByExample="false"
-               selectByExampleQueryId="false">
-            <property name="useActualColumnNames" value="true"/>
-            <property name="constructorBased" value="true"/>
+            <!--<columnRenamingRule searchString="native" replaceString="native_place"/>-->
         </table>
     </context>
 </generatorConfiguration>

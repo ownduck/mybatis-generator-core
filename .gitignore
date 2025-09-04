@@ -29,4 +29,6 @@ mvnw*
 .DS_Store
 */.DS_Store
 
-src/la
+src/
+!src/main
+!src/site
