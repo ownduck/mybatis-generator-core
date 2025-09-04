@@ -19,4 +19,4 @@ rm -rf ./src/com/
 #java -jar mybatis-generator-core-1.3.6.jar -configfile ./eversight_mobile.xml -overwrite
 # java -jar mybatis-generator-core-1.3.6.jar -configfile ./netops.xml -overwrite
 # java -jar mybatis-generator-core-1.3.6.jar -configfile ./smartcard.xml -overwrite
-java -jar mybatis-generator-core-1.4.2.jar -configfile ./paibox.xml -overwrite
+java -jar mybatis-generator-core-1.3.6.jar -configfile ./paibox.xml -overwrite
