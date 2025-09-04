@@ -32,3 +32,5 @@ mvnw*
 src/
 !src/main
 !src/site
+
+/*.xml
